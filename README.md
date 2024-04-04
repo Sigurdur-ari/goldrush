@@ -1,0 +1,2 @@
+# goldrush
+goldrush fyrir reference
