@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<MenuBar prefHeight="40" VBox.vgrow="NEVER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.goldrush.MenuController">
+    <menus>
+        <Menu mnemonicParsing="false" style="-fx-border-width: 1; -fx-border-color: BLACK;" text="Skrá">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Nýr Leikur" onAction="#onNyrLeikur"/>
+                <MenuItem mnemonicParsing="false" text="Quit" onAction="#onHaetta"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" style="-fx-border-width: 1; -fx-border-color: BLACK;" text="Breyta">
+            <items>
+                <RadioMenuItem fx:id="fxLett" mnemonicParsing="false" onAction="#onErfidleikastig" text="Létt">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="erfidleiki" />
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem fx:id="fxMid" mnemonicParsing="false" onAction="#onErfidleikastig" selected="true" text="Miðlungs" toggleGroup="$erfidleiki" />
+                <RadioMenuItem fx:id="fxErfitt" mnemonicParsing="false" onAction="#onErfidleikastig" text="Erfitt" toggleGroup="$erfidleiki" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" style="-fx-border-width: 1; -fx-border-color: BLACK;" text="Hjálp">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Um Forritið" onAction="#umHandler"/>
+            </items>
+        </Menu>
+    </menus>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</MenuBar>

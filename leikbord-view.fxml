@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<?import vidmot.goldrush.*?>
+
+<fx:root type="javafx.scene.layout.Pane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <Grafari fx:id="fxGrafari" x="20" y="50"/>
+</fx:root>
